@@ -1,11 +1,29 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 
-const Home: NextPage = () => {
+
+interface HomeProps {
+  projects:{
+    title:string,
+
+  }[],
+}
+// Home page of site
+const Home: NextPage<HomeProps> = ({projects}) => {
+
   return (
-    <div>
-      <h1>This is my portfolio</h1>
-    </div>
+
+    <h1 style={{color:"white"}}>Jonathan Aruliah</h1>
   )
 }
 
 export default Home
+
+export const getStaticProps:GetStaticProps = async() => {
+  // Get projects
+  const res = await fetch(`https://api.jaruliah.me/projects`)
+  const projects = await res.json()
+
+  return {
+    props:{projects}
+  }
+}
