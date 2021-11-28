@@ -1,0 +1,70 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-size: 16px;
+    color: white;
+}
+
+div#__next{
+    height: 100%;
+}
+
+// svg filter 
+.filter-blue{
+    filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
+}
+
+// Header
+header{
+    background-color: #383838;
+    nav{
+        height: 4rem;
+        ul{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            height: 100%;
+            li{
+                list-style: none;
+                margin: auto 1rem;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    height: 90%;
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        .heading{
+            text-align: center;
+            h1{
+                font-size: 3rem;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+        .socials{
+            display: flex;
+            justify-content: center;
+            margin-top:1rem;
+            a{
+                margin-right: 1rem;
+            }
+        }
+    }
+}

@@ -1,4 +1,6 @@
 import type { NextPage, GetStaticProps } from 'next'
+import {Header} from '../components/Header'
+import {Hero} from '../components/Hero'
 
 
 interface HomeProps {
@@ -11,8 +13,13 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({projects}) => {
 
   return (
+    <>
+      <Header />
+      <div className="container">
+        <Hero />
 
-    <h1 style={{color:"white"}}>Jonathan Aruliah</h1>
+      </div>
+    </>
   )
 }
 

@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-size: 16px;
+  color: white;
+}
+
+div#__next {
+  height: 100%;
+}
+
+.filter-blue {
+  -webkit-filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
+          filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
+}
+
+header {
+  background-color: #383838;
+}
+
+header nav {
+  height: 4rem;
+}
+
+header nav ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: auto 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 90%;
+}
+
+.container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+}
+
+.container .hero .heading {
+  text-align: center;
+}
+
+.container .hero .heading h1 {
+  font-size: 3rem;
+}
+
+.container .hero .heading h3 {
+  font-size: 1.5rem;
+}
+
+.container .hero .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.container .hero .socials a {
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

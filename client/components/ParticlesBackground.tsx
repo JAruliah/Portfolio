@@ -12,11 +12,11 @@ export const ParticlesBackground: React.FC<ParticlesBackgroundProps> = ({}) => {
         console.log(main);
     
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-      };
+      }
     
       const particlesLoaded = (container:any) => {
         console.log(container);
-      };
+      }
 
         return (
             <div className="particles" style={{position:"fixed", width:"100%", zIndex:"-1"}}>
