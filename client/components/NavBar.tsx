@@ -9,7 +9,7 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
         return (
             <nav>
                 <ul>
-                    <li><Link href="/">About</Link></li>
+                    <li><Link href="/#about">About</Link></li>
                     <li><Link href="/">Projects</Link></li>
                 </ul>
             </nav>

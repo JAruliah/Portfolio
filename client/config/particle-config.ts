@@ -394,8 +394,8 @@ const particleConfig:{} = {
           minimumValue: 0.3
         },
         value: {
-          min: 0.5,
-          max: 1
+          min: 0.3,
+          max: 0.6
         }
       },
       orbit: {

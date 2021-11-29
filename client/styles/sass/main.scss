@@ -1,10 +1,13 @@
+@import './variables';
+
 html{
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body{
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 
@@ -12,14 +15,36 @@ div#__next{
     height: 100%;
 }
 
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
 // svg filter 
 .filter-blue{
     filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
 }
+// socials
+.socials{
+    display: flex;
+    justify-content: center;
+    margin-top:1rem;
+    a{
+        margin-right: .5rem;
+    }
+}
 
 // Header
 header{
-    background-color: #383838;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $darkBlue;
     nav{
         height: 4rem;
         ul{
@@ -28,17 +53,26 @@ header{
             justify-content: center;
             margin: 0;
             height: 100%;
+            // header list items
             li{
                 list-style: none;
                 margin: auto 1rem;
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 5px;
                 a{
+                    padding: 5px;
                     color: white;
                     text-decoration: none;
                 }
             }
+            // hover for the list items
+            li:hover{
+                border: 2px solid $blue;
+            }
         }
     }
-}
+}// end of header
 
 .container{
     width: 80%;
@@ -48,22 +82,22 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70%;
+        height: 100vh;
         .heading{
             text-align: center;
-            h1{
-                font-size: 3rem;
-            }
-            h3{
-                font-size: 1.5rem;
-            }
         }
+    }// head of hero section
+    .about{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .socials{
-            display: flex;
-            justify-content: center;
-            margin-top:1rem;
-            a{
-                margin-right: 1rem;
+            justify-content: start;
+        }
+        .about-description{
+            p{
+                line-height: 1rem;
             }
         }
     }

@@ -1,22 +1,19 @@
 import React from 'react'
+import {Socials} from './Socials'
+import {HomeContent} from '../types/types'
 
 interface HeroProps {
-
+    home:HomeContent
 }
 
-export const Hero: React.FC<HeroProps> = ({}) => {
+export const Hero: React.FC<HeroProps> = ({home}) => {
         return (
             <section id="hero" className="hero">
                 <div className="heading">
-                    <h1>Jonathan Aruliah</h1>
-                    <h3>Full Stack Web Developer</h3>
-                    <div className="socials">
-                        <a href="https://github.com/JAruliah" target="_blank"><img className="filter-blue" src="/img/github.svg" width="40" alt="github logo" /></a>
-                        <a href="https://www.linkedin.com/in/jonathan-aruliah-1b98611ba/" target="_blank" ><img className="filter-blue" src="/img/linkedin.svg" width="40" alt="linkedin logo" /></a>
-                        <a href="mailto:jonathanaruliah@gmail.com"><img className="filter-blue" src="/img/mail.svg" width="40" alt="mail" /></a>
-                        <a></a>
-                    </div>
+                    <h1>{home.title}</h1>
+                    <h3>{home.subheading}</h3>
+                    <Socials links={home.links}/>
                 </div>
             </section>
-        );
+        )
 }

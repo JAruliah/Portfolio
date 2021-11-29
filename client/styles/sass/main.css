@@ -1,10 +1,11 @@
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
 }
 
@@ -12,13 +13,42 @@ div#__next {
   height: 100%;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 .filter-blue {
   -webkit-filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
           filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
 }
 
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.socials a {
+  margin-right: .5rem;
+}
+
 header {
-  background-color: #383838;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #071E3D;
 }
 
 header nav {
@@ -40,11 +70,19 @@ header nav ul {
 header nav ul li {
   list-style: none;
   margin: auto 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 header nav ul li a {
+  padding: 5px;
   color: white;
   text-decoration: none;
+}
+
+header nav ul li:hover {
+  border: 2px solid #21E6C1;
 }
 
 .container {
@@ -63,32 +101,33 @@ header nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70%;
+  height: 100vh;
 }
 
 .container .hero .heading {
   text-align: center;
 }
 
-.container .hero .heading h1 {
-  font-size: 3rem;
-}
-
-.container .hero .heading h3 {
-  font-size: 1.5rem;
-}
-
-.container .hero .socials {
+.container .about {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container .hero .socials a {
-  margin-right: 1rem;
+.container .about .socials {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.container .about .about-description p {
+  line-height: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
