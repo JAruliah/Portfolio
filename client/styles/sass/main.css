@@ -159,7 +159,6 @@ header nav ul li:hover {
 .container .projects .projects-div .project {
   position: relative;
   width: 45%;
-  min-height: 16rem;
   padding-bottom: 3rem;
 }
 
@@ -181,9 +180,12 @@ header nav ul li:hover {
 }
 
 .container .projects .projects-div .project .tech-used ul li {
-  margin-right: 1rem;
-  list-style-position: inside;
-  padding: 0;
+  margin: 2px 0;
+  margin-right: 5px;
+  list-style: none;
+  background-color: #293241;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 .container .projects .projects-div .project .buttons {
@@ -192,7 +194,6 @@ header nav ul li:hover {
 }
 
 .container .projects .projects-div .project .live-site {
-  bottom: 1;
   text-decoration: none;
   color: white;
   background-color: #3d5a80;
@@ -221,8 +222,10 @@ header nav ul li:hover {
 
 @media only screen and (max-width: 600px) {
   .container .projects {
-    height: 100vh;
-    padding: 130% 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10rem 0;
   }
   .container .projects .projects-div {
     display: block;
@@ -233,6 +236,24 @@ header nav ul li:hover {
     height: fit-content;
     width: 100%;
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .projects {
+    padding: 15rem 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .projects {
+    padding: 8rem 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .projects {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

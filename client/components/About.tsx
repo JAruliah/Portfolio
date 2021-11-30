@@ -28,7 +28,7 @@ export const About: React.FC<AboutProps> = ({about, links, skills}) => {
                         <p>{about.description}</p>
                     </div>
                     <div>
-                        <h3>Skills |</h3>
+                        <h3>Skills</h3>
                         {/*Display all the images in the skills*/}
                         <div className="skills">
                             {skills.map((skill, index) => {

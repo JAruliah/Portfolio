@@ -9,6 +9,7 @@ export const Projects: React.FC<ProjectsProps> = ({projects}) => {
         return (
             <section id="projects" className="projects">
                 <div className="projects-div">
+
                 {projects.map((project, index) => {
                     return (
                     <div key={index} className="project">
@@ -25,8 +26,8 @@ export const Projects: React.FC<ProjectsProps> = ({projects}) => {
                         </div>
 
                         <div className="buttons">
-                            <a className="live-site" href={project.url} target="_blank">Live Site</a>
-                            <a className="source-code" href={project.code} target="_blank">GitHub</a>
+                            <a className="live-site" href={project.url} target="_blank"><img src="/img/website.png" alt="github logo" width="20" height="20"/>Live Site</a>
+                            <a className="source-code" href={project.code} target="_blank"><img src="/img/github.svg" alt="github logo" width="20" height="20"/>GitHub</a>
                         </div>
 
                     </div>
