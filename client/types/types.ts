@@ -8,7 +8,12 @@ export type HomeContent = {
         alternativeText:string,
         url:string
       }
-    }[]
+    }[],
+    footermessage:string,
+    footerimage:{
+        url:string,
+        alternativeText:string
+    }
 }
 
 export type AboutContent = {
@@ -47,3 +52,8 @@ export type SkillsContent = {
   skill:string,
   category:string
 }[]
+
+export type FooterContent = {
+  footermessage:string,
+  footerimage:string
+}

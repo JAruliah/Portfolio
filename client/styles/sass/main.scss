@@ -21,6 +21,9 @@ h1,h2,h3,h4{
 h1{
     font-size: 3rem;
 }
+h2{
+    font-size: 2.5rem;
+}
 h3{
     font-size: 1.5rem;
 }
@@ -118,14 +121,35 @@ header{
             justify-content: space-between;
             gap: 3rem 0;   
             .project{
+                position:relative;
                 width: 45%;
+                min-height:16rem ;
+                padding-bottom: 3rem;
                 h2{
                     font-size: 2rem;
+                    margin-bottom: 1rem;
                 }
                 p{
                     margin-bottom: 1rem;
                 }
+                .tech-used{
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        
+                        li{
+                            margin-right: 1rem;
+                            list-style-position:inside;
+                            padding:0;
+                        }
+                    }
+                }
+                .buttons{
+                    position: absolute;
+                    bottom:   0;
+                }
                 .live-site{
+                    bottom:1;
                     text-decoration: none;
                     color: white;
                     background-color: $tagBlue;
@@ -143,6 +167,18 @@ header{
             }        
         }
 
+    }// end of projects
+
+    footer{
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $darkBlue;
+        color: white;
+        text-align: center;
+
     }
 }
 
@@ -150,10 +186,11 @@ header{
     .container{
         .projects{
             height: 100vh;
-            padding: 100% 0;
+            padding: 130% 0;
             .projects-div{
                 display: block;
                 .project{
+                    height: fit-content;
                     width: 100%;
                     margin-bottom: 3rem;
                 }

@@ -21,6 +21,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
   font-size: 1.5rem;
 }
@@ -153,18 +157,42 @@ header nav ul li:hover {
 }
 
 .container .projects .projects-div .project {
+  position: relative;
   width: 45%;
+  min-height: 16rem;
+  padding-bottom: 3rem;
 }
 
 .container .projects .projects-div .project h2 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .container .projects .projects-div .project p {
   margin-bottom: 1rem;
 }
 
+.container .projects .projects-div .project .tech-used ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .projects .projects-div .project .tech-used ul li {
+  margin-right: 1rem;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.container .projects .projects-div .project .buttons {
+  position: absolute;
+  bottom: 0;
+}
+
 .container .projects .projects-div .project .live-site {
+  bottom: 1;
   text-decoration: none;
   color: white;
   background-color: #3d5a80;
@@ -181,15 +209,28 @@ header nav ul li:hover {
   border-radius: 5px;
 }
 
+.container footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #071E3D;
+  color: white;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   .container .projects {
     height: 100vh;
-    padding: 100% 0;
+    padding: 130% 0;
   }
   .container .projects .projects-div {
     display: block;
   }
   .container .projects .projects-div .project {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     width: 100%;
     margin-bottom: 3rem;
   }

@@ -21,7 +21,7 @@ export const About: React.FC<AboutProps> = ({about, links, skills}) => {
             <section className="about" id="about">
                 <div>
                     <div className="top-heading">
-                        <h1>{about.title}</h1>
+                        <h2>{about.title}</h2>
                         <Socials links={links} />
                     </div>
                     <div className="about-description" style={{whiteSpace: "pre-wrap"}}>

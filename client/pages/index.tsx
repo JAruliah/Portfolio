@@ -3,7 +3,8 @@ import {Header} from '../components/Header'
 import {Hero} from '../components/Hero'
 import {About} from '../components/About'
 import { Projects } from '../components/Projects'
-import {HomeContent, AboutContent, ProjectsContent, SkillsContent} from '../types/types'
+import {HomeContent, AboutContent, ProjectsContent, SkillsContent, FooterContent} from '../types/types'
+import {Footer} from '../components/Footer'
 
 
 interface HomeProps {
@@ -13,7 +14,7 @@ interface HomeProps {
   skills:SkillsContent
 }
 // Home page of site
-const Home: NextPage<HomeProps> = ({about, home, projects, skills }) => {
+const Home: NextPage<HomeProps> = ({about, home, projects, skills}) => {
 
   return (
     <>
@@ -22,6 +23,7 @@ const Home: NextPage<HomeProps> = ({about, home, projects, skills }) => {
         <Hero home={home}/>
         <About about={about} links={home.links} skills={skills} />
         <Projects projects={projects}/>
+        <Footer footerMessage={home.footermessage} footerImage={home.footerimage}/>
       </div>
     </>
   )
