@@ -5,6 +5,7 @@ import {About} from '../components/About'
 import { Projects } from '../components/Projects'
 import {HomeContent, AboutContent, ProjectsContent, SkillsContent, FooterContent} from '../types/types'
 import {Footer} from '../components/Footer'
+import Head from 'next/head'
 
 
 interface HomeProps {
@@ -18,6 +19,13 @@ const Home: NextPage<HomeProps> = ({about, home, projects, skills}) => {
 
   return (
     <>
+      <Head>
+        <title>Jonathan Aruliah</title>
+        <meta name="description" content="Jonathan Aruliah's web portfolio"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
+        <link rel="shortcut icon" href={`https://api.jaruliah.me${home.favicon.url}`} />
+      </Head>
+
       <Header />
       <div className="container">
         <Hero home={home}/>

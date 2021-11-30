@@ -17,7 +17,11 @@ export type HomeContent = {
     headerlogo:{
       url:string,
       alternativeText:string
-    }[]
+    },
+    favicon:{
+      url:string,
+      alternativeText:string
+    }
 }
 
 export type AboutContent = {
