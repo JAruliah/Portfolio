@@ -13,7 +13,7 @@ export const Projects: React.FC<ProjectsProps> = ({projects}) => {
                 {projects.map((project, index) => {
                     return (
                     <div key={index} className="project">
-                        <img src={`https://api.jaruliah.me${project.coverImage.url}`} alt={project.coverImage.alternativeText} width="50"/>
+                        <img src={`https://api.jaruliah.me${project.coverImage.url}`} alt={project.coverImage.alternativeText} width="50" height="50"/>
                         <h2>{project.title}</h2>
                         <p>{project.description}</p>
 

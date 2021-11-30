@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "scss": "sass styles/sass:styles/css ",
-    "scss-dev": "sass --watch src/styles/sass:src/styles/css "
+    "scss-dev": "sass --watch styles/sass:styles/css "
   },
   "dependencies": {
     "next": "12.0.4",

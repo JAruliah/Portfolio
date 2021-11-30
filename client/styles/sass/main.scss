@@ -209,16 +209,24 @@ header{
 
 @media only screen and (min-width:600px){
     .projects{
-        padding:15rem 0;
+        padding:22rem 0;
     }
 }
 @media only screen and (min-width:800px){
     .projects{
-        padding:8rem 0;
+        padding:18rem 0;
     }
 }
-@media screen and (min-width:1920px) {
+@media only screen and (min-width:1025){
     .projects{
-        padding: 0;
+        padding:12rem 0;
+    }
+}
+@media only screen and (min-width:1400px){
+    .container{
+        width: 1200px;
+    }
+    .projects{
+        padding:8rem 0;
     }
 }

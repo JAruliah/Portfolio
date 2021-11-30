@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my web portfolio
+This is my web portfolio, using Next.js and strapi cms
 
 ## Description
 
