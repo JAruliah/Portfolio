@@ -24,6 +24,12 @@ h1{
 h3{
     font-size: 1.5rem;
 }
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 // svg filter 
 .filter-blue{
@@ -45,6 +51,7 @@ header{
     top: 0;
     width: 100%;
     background-color: $darkBlue;
+    z-index: 1;
     nav{
         height: 4rem;
         ul{
@@ -79,25 +86,77 @@ header{
     margin: auto;
     height: 90%;
     .hero{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+
         .heading{
             text-align: center;
         }
     }// head of hero section
     .about{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         .socials{
             justify-content: start;
         }
         .about-description{
-            p{
-                line-height: 1rem;
+            margin: 1rem 0;
+        }
+        .skills{
+            display: flex;
+            flex-wrap: wrap;
+            h4{
+                margin-top: .5rem;
+                margin-right: 5px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+    }// end of about
+    .projects{
+        display:flex;
+        .projects-div{
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            gap: 3rem 0;   
+            .project{
+                width: 45%;
+                h2{
+                    font-size: 2rem;
+                }
+                p{
+                    margin-bottom: 1rem;
+                }
+                .live-site{
+                    text-decoration: none;
+                    color: white;
+                    background-color: $tagBlue;
+                    margin-right: .5rem;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+                .source-code{
+                    text-decoration: none;
+                    color: white;
+                    background-color: $tagOrange;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }        
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        .projects{
+            height: 100vh;
+            padding: 100% 0;
+            .projects-div{
+                display: block;
+                .project{
+                    width: 100%;
+                    margin-bottom: 3rem;
+                }
             }
         }
     }

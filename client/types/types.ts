@@ -28,3 +28,22 @@ export type Links = {
     url:string
   }
 }[]
+
+export type ProjectsContent={
+  title:string,
+  description:string,
+  coverImage: {
+    url:string,
+    alternativeText:string
+  },
+  teches:{
+    tech:string
+  }[],
+  code:string,
+  url:string
+}
+
+export type SkillsContent = {
+  skill:string,
+  category:string
+}[]

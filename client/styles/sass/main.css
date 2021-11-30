@@ -25,6 +25,19 @@ h3 {
   font-size: 1.5rem;
 }
 
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .filter-blue {
   -webkit-filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
           filter: invert(68%) sepia(60%) saturate(511%) hue-rotate(116deg) brightness(95%) contrast(102%);
@@ -49,6 +62,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #071E3D;
+  z-index: 1;
 }
 
 header nav {
@@ -91,34 +105,8 @@ header nav ul li:hover {
   height: 90%;
 }
 
-.container .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-}
-
 .container .hero .heading {
   text-align: center;
-}
-
-.container .about {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .container .about .socials {
@@ -127,7 +115,83 @@ header nav ul li:hover {
           justify-content: start;
 }
 
-.container .about .about-description p {
-  line-height: 1rem;
+.container .about .about-description {
+  margin: 1rem 0;
+}
+
+.container .about .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .about .skills h4 {
+  margin-top: .5rem;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .projects .projects-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3rem 0;
+}
+
+.container .projects .projects-div .project {
+  width: 45%;
+}
+
+.container .projects .projects-div .project h2 {
+  font-size: 2rem;
+}
+
+.container .projects .projects-div .project p {
+  margin-bottom: 1rem;
+}
+
+.container .projects .projects-div .project .live-site {
+  text-decoration: none;
+  color: white;
+  background-color: #3d5a80;
+  margin-right: .5rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container .projects .projects-div .project .source-code {
+  text-decoration: none;
+  color: white;
+  background-color: #ee6c4d;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .projects {
+    height: 100vh;
+    padding: 100% 0;
+  }
+  .container .projects .projects-div {
+    display: block;
+  }
+  .container .projects .projects-div .project {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

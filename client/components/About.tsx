@@ -1,7 +1,7 @@
 import { homedir } from 'os'
 import React, {useEffect} from 'react'
 import {Socials} from './Socials'
-import {AboutContent} from '../types/types'
+import {AboutContent, SkillsContent} from '../types/types'
 
 interface AboutProps {
     about: AboutContent,
@@ -13,9 +13,10 @@ interface AboutProps {
           url:string
         }
       }[]
+    skills: SkillsContent
 }
 
-export const About: React.FC<AboutProps> = ({about, links}) => {
+export const About: React.FC<AboutProps> = ({about, links, skills}) => {
         return (
             <section className="about" id="about">
                 <div>
@@ -27,9 +28,21 @@ export const About: React.FC<AboutProps> = ({about, links}) => {
                         <p>{about.description}</p>
                     </div>
                     <div>
-                        <h3>Skills</h3>
+                        <h3>Skills |</h3>
                         {/*Display all the images in the skills*/}
-                        {about.skills.map((skill, index) => {return <img key={index} src={`https://api.jaruliah.me${skill.url}`} width="40" alt={skill.alternativeText}/>})}
+                        <div className="skills">
+                            {skills.map((skill, index) => {
+                                if(skill.category === "Front-End"){
+                                    return <h4 key={index} style={{backgroundColor:"#3d5a80 ", width:"fit-content"}}>{skill.skill}</h4>
+                                }
+                                if (skill.category === "Back-End"){
+                                    return <h4 key={index} style={{backgroundColor:"#ee6c4d", width:"fit-content"}}>{skill.skill}</h4>
+                                }
+                                if (skill.category === "Other Tools"){
+                                    return <h4 key={index} style={{backgroundColor:"#293241", width:"fit-content"}}>{skill.skill}</h4>
+                                }
+                            })}
+                        </div>
                     </div>
                 </div>
             </section>
