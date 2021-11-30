@@ -150,4 +150,4 @@
 
 # typescript
 /client/*.tsbuildinfo
-/client/styles/*.css
+/client/styles/css
