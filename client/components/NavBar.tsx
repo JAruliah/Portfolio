@@ -1,17 +1,18 @@
 import React from 'react'
-import Link from 'next/link'
+
 
 interface NavBarProps {
 
 }
 
 export const NavBar: React.FC<NavBarProps> = ({}) => {
+
         return (
             <nav>
                 <ul>
-                <li><Link href="/#hero">Home</Link></li>
-                    <li><Link href="/#about">About</Link></li>
-                    <li><Link href="/#projects">Projects</Link></li>
+                <li><a onClick={() =>  document.getElementById("hero")?.scrollIntoView()}>Home</a></li>
+                    <li><a onClick={ () => document.getElementById("about")?.scrollIntoView()}>About</a></li>
+                    <li><a onClick={() => document.getElementById("projects")?.scrollIntoView()}>Projects</a></li>
                 </ul>
             </nav>
         )

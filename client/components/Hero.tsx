@@ -10,6 +10,7 @@ export const Hero: React.FC<HeroProps> = ({home}) => {
         return (
             <section id="hero" className="hero">
                 <div className="heading">
+                    <img src={`https://api.jaruliah.me${home.headerlogo[0].url}`} alt={home.headerlogo[0].alternativeText} width="100" />
                     <h1>{home.title}</h1>
                     <h3>{home.subheading}</h3>
                     <Socials links={home.links}/>

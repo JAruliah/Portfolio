@@ -3,6 +3,7 @@
 html{
     height: 100%;
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -16,7 +17,7 @@ div#__next{
 }
 
 h1,h2,h3,h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 h1{
     font-size: 3rem;
@@ -71,6 +72,7 @@ header{
                 border-radius: 5px;
                 padding: 5px;
                 a{
+                    cursor: pointer;
                     padding: 5px;
                     color: white;
                     text-decoration: none;
@@ -105,7 +107,7 @@ header{
         .skills{
             display: flex;
             flex-wrap: wrap;
-            h4{
+            p{
                 margin-top: .5rem;
                 margin-right: 5px;
                 padding: 5px;
@@ -149,21 +151,26 @@ header{
                 .buttons{
                     position: absolute;
                     bottom:   0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
-                .live-site{
+                .live-site a{
                     text-decoration: none;
                     color: white;
                     background-color: $tagBlue;
                     margin-right: .5rem;
-                    padding: 5px;
+                    padding: 5px 10px;
                     border-radius: 5px;
+                    
                 }   
-                .source-code{
+                .source-code a{
                     text-decoration: none;
                     color: white;
                     background-color: $tagOrange;
                     padding: 5px;
                     border-radius: 5px;
+                    
                 }
             }        
         }
@@ -171,7 +178,7 @@ header{
     }// end of projects
 
     footer{
-
+        height: 4rem;
         position: fixed;
         left: 0;
         bottom: 0;

@@ -13,7 +13,11 @@ export type HomeContent = {
     footerimage:{
         url:string,
         alternativeText:string
-    }
+    },
+    headerlogo:{
+      url:string,
+      alternativeText:string
+    }[]
 }
 
 export type AboutContent = {
