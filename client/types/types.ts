@@ -1,3 +1,5 @@
+// ALL CUSTOM TYPE DEFINITIONS
+
 export type HomeContent = {
     title:string,
     subheading:string,

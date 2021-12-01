@@ -1,4 +1,3 @@
-import { homedir } from 'os'
 import React, {useEffect} from 'react'
 import {Socials} from './Socials'
 import {AboutContent, SkillsContent} from '../types/types'
@@ -15,7 +14,7 @@ interface AboutProps {
       }[]
     skills: SkillsContent
 }
-
+// About section of the site
 export const About: React.FC<AboutProps> = ({about, links, skills}) => {
         return (
             <section className="about" id="about">
@@ -29,7 +28,8 @@ export const About: React.FC<AboutProps> = ({about, links, skills}) => {
                     </div>
                     <div>
                         <h3>Skills: </h3>
-                        {/*Display all the images in the skills*/}
+                        {/*Display all the images in the skills
+                           Change the color of the skills depending on the type of skill*/}
                         <div className="skills">
                             {skills.map((skill, index) => {
                                 if(skill.category === "Front-End"){

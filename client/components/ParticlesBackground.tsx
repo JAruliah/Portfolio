@@ -5,7 +5,7 @@ import ParticleConfig from "../config/particle-config"
 interface ParticlesBackgroundProps {
 
 }
-
+// ParticlesBackground component using react-tsparticles
 export const ParticlesBackground: React.FC<ParticlesBackgroundProps> = ({}) => {
 
     const particlesInit = (main:any) => {

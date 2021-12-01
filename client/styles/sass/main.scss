@@ -29,10 +29,8 @@ h3{
     font-size: 1.5rem;
 }
 section{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+
 }
 
 // svg filter 
@@ -91,13 +89,21 @@ header{
     margin: auto;
     height: 90%;
     .hero{
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .heading{
             text-align: center;
         }
     }// head of hero section
     .about{
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            border-bottom: 2px solid $blue;
+            width: fit-content;
+        }
         .socials{
             justify-content: start;
         }
@@ -116,7 +122,14 @@ header{
         }
     }// end of about
     .projects{
-        display:flex;
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+        .projects-heading{
+            margin: 2rem 0;
+            border-bottom: 2px solid $blue;
+            width: fit-content;
+
+        }
         .projects-div{
             display: flex;
             flex-wrap: wrap; 
@@ -186,6 +199,13 @@ header{
         background-color: $darkBlue;
         color: white;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: flex;
+            align-items: center;
+        }
 
     }
 }
@@ -194,7 +214,7 @@ header{
     .container{
         .projects{
             height: fit-content;
-            padding: 10rem 0;
+            padding-bottom: 5rem;
             .projects-div{
                 display: block;
                 .project{
@@ -207,26 +227,9 @@ header{
     }
 }
 
-@media only screen and (min-width:600px){
-    .projects{
-        padding:22rem 0;
-    }
-}
-@media only screen and (min-width:800px){
-    .projects{
-        padding:18rem 0;
-    }
-}
-@media only screen and (min-width:1025){
-    .projects{
-        padding:12rem 0;
-    }
-}
-@media only screen and (min-width:1400px){
+@media only screen and (min-width:1100px){
     .container{
-        width: 1200px;
-    }
-    .projects{
-        padding:8rem 0;
+        width: 1000px;
     }
 }
+
