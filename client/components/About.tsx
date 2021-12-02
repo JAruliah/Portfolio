@@ -32,8 +32,11 @@ export const About: React.FC<AboutProps> = ({about, links, skills}) => {
                            Change the color of the skills depending on the type of skill*/}
                         <div className="skills">
                             {skills.map((skill, index) => {
-                                if(skill.category === "Front-End"){
+                                if(skill.category === "Language"){
                                     return <p key={index} style={{backgroundColor:"#3d5a80 ", width:"fit-content"}}>{skill.skill}</p>
+                                }
+                                if (skill.category === "Front-End"){
+                                    return <p key={index} style={{backgroundColor:"#219ebc ", width:"fit-content"}}>{skill.skill}</p>
                                 }
                                 if (skill.category === "Back-End"){
                                     return <p key={index} style={{backgroundColor:"#ee6c4d", width:"fit-content"}}>{skill.skill}</p>
