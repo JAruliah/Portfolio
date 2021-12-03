@@ -2,7 +2,7 @@
 ![portfolio-home](https://user-images.githubusercontent.com/71105258/144513428-407b4d7d-6a76-4a33-9063-057e3af381e1.png)
 
 
-### Live Site: jaruliah.me
+### Live Site: https://jaruliah.me
 
 This is my web portfolio, using Next.js and strapi cms
 
